@@ -6,3 +6,4 @@ soundfile
 pydub
 sounddevice
 click
+customtkinter
