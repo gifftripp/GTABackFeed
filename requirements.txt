@@ -1,0 +1,9 @@
+numpy
+scipy
+librosa
+noisereduce
+soundfile
+sounddevice
+pydub
+tqdm
+click
