@@ -3,7 +3,6 @@ scipy
 librosa
 noisereduce
 soundfile
-sounddevice
 pydub
-tqdm
+sounddevice
 click
