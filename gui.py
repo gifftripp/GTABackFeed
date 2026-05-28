@@ -119,8 +119,9 @@ class AudioSuppressorApp(ctk.CTk):
             suppressor.reduce_noise(self.input_path, self.output_path, reduction_strength=strength)
             
             self.progress.set(1.0)
-            self.status.configure(text=f"✅ Success! Clean file saved:
-{os.path.basename(self.output_path)}", text_color="lightgreen")
+            # Fixed f-string
+            clean_name = os.path.basename(self.output_path)
+            self.status.configure(text=f"✅ Success! Clean file saved:\n{clean_name}", text_color="lightgreen")
             
         except Exception as e:
             self.status.configure(text=f"❌ Error: {str(e)}", text_color="red")
